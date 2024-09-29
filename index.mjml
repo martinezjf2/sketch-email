@@ -5,6 +5,21 @@
         box-sizing: border-box;
 
       }
+
+      .footer-privacy {
+        text-decoration: none;
+        font-weight: 600;
+        color: #020202;
+        letter-spacing: .5px;
+      }
+
+      .footer-privacy:hover {
+        text-decoration: underline;
+        font-weight: 600;
+        color: #020202;
+        letter-spacing: .5px;
+
+      }
     </mj-style>
 
     <!-- The inline style will be used for reusability throughout the email. -->
@@ -12,7 +27,103 @@
 
     </mj-style>
   </mj-head>
-  <mj-body>
+  <mj-body background-color="#f2f2f2">
+    <mj-wrapper background-color="white">
+
+      <mj-section>
+        <mj-column>
+          <mj-image src="/assets/sketch.logo.png" alt="sketch logo" width="160px" padding="10px 0 0 0" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-image src="/assets/smart-animate@2x-1.png" alt="sketch image" padding="0" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0">
+        <mj-column>
+          <mj-text letter-spacing=".8px" font-weight="300" font-size="14px" line-height="2" padding="10px 25px 20px">
+            Hey there,
+          </mj-text>
+          <mj-text letter-spacing=".3px" font-weight="300" font-size="14px" line-height="1.5" padding="0 25px 20px">
+            We’ve just released our latest Sketch update, which introduces <span style="font-weight: 600; text-decoration: underline;">Smart Animate</span> — a new way to bring movement to your prototypes with smooth, animated transitions. Along with it, we’ve added support for Color Variables in gradients, a quick way to replace Libraries, and lots more!
+          </mj-text>
+          <mj-text letter-spacing=".3px" font-weight="300" font-size="14px" line-height="1.5" padding="0 25px 20px">
+            Over on the web app, we’ve made it easier for developers to export any layer from the browser and given the UI a further refresh — there’s a new font, a cleaner look, and redesigned thumbnails.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 0 5px">
+        <mj-column>
+          <mj-button href="https://sketch.com" border-radius="5px" background-color="#0f0f10" letter-spacing=".5px" inner-padding="15px 25px" font-weight="500">
+            Get the update
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-text letter-spacing=".3px" font-weight="300" font-size="14px" line-height="1.5" padding="0 25px 25px">
+            You can find details of all these updates at <a href="https://sketch.com/updates" style="color: black; font-weight: 500">sketch.com/updates</a>. As always, we’d love to hear your thoughts, feature requests or ideas <a href="https://sketch.com/updates" style="color: black; font-weight: 500">over on the forum</a>.
+          </mj-text>
+          <mj-text letter-spacing=".3px" font-weight="300" font-size="14px" line-height="1.5" padding="0 25px 25px">
+            Thank you for your support. See you soon!
+          </mj-text>
+          <mj-text letter-spacing=".3px" font-weight="600" font-size="14px" line-height="1.5" padding="0 25px 25px">
+            The team at Sketch
+          </mj-text>
+          <mj-text letter-spacing=".3px" font-weight="300" font-size="14px" line-height="1.5" padding="0 25px 20px">
+            P.S. If you want a sneak preview of what’s next, take a look at <a href="https://sketch.com/roadmap" style="color: black; font-weight: 500">sketch.com/roadmap.</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-section background-color="#f2f2f2" padding="40px 0">
+      <mj-column>
+        <mj-text align="center" color="#818181" font-size="13px">
+          You are receiving this product update because you are a Sketch customer.
+        </mj-text>
+        <mj-text align="center" color="#818181" font-size="13px" font-weight="700">
+          Choose which emails you receive or unsubscribe here
+        </mj-text>
+        <mj-text align="center" color="#818181" font-size="13px">
+          Sketch B.V., Flight Forum 40 Ground floor, 5657 DB Eindhoven, The Netherlands
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#f2f2f2" padding="0 20px 25px">
+      <mj-group width="40%">
+        <mj-column padding="0">
+          <mj-image src="/assets/sketch.logo-2.png" alt="sketch logo" width="30px" height="30px" padding="0" />
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image src="/assets/social.instagram.png" alt="instagram logo" width="30px" height="30px" padding="0" />
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image src="/assets/social.x.png" alt="x logo" width="30px" height="30px" padding="0" />
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image src="/assets/social.youtube.png" alt="youtube logo" width="30px" height="30px" padding="0" />
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image src="/assets/social.mastadon.png" alt="mastadon logo" width="30px" height="30px" padding="0" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section padding="10px 0 70px">
+      <mj-column>
+        <mj-text align="center" font-size="14px" padding="0">
+          <a href="#" class="footer-privacy">Privacy statement</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
 
 
   </mj-body>
